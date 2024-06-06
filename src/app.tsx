@@ -12,8 +12,8 @@ export default function App() {
                 <QueryClientProvider client={new QueryClient({
                     defaultOptions: {
                         queries: {
-                            refetchOnMount: false,
-                            suspense: true
+                            retryOnMount: false,
+                            refetchOnMount: false
                         }
                     }
                 })}>
