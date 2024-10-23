@@ -2,20 +2,20 @@
   "name": "example-basic",
   "type": "module",
   "scripts": {
-    "dev": "vinxi dev",
-    "build": "vinxi build",
-    "start": "vinxi start",
-    "version": "vinxi version"
+    "dev": "bunx --bun vinxi dev",
+    "build": "bunx --bun vinxi build",
+    "start": "bunx --bun vinxi start",
+    "version": "bunx --bun vinxi version"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
-    "@solidjs/router": "^0.13.5",
-    "@solidjs/start": "^1.0.1",
-    "@tanstack/query-core": "^5.51.5",
-    "@tanstack/solid-query": "^5.51.5",
-    "@tanstack/solid-query-devtools": "^5.51.5",
-    "solid-js": "^1.8.15",
-    "vinxi": "^0.3.10"
+    "@solidjs/router": "^0.13.6",
+    "@solidjs/start": "^1.0.9",
+    "@tanstack/query-core": "^5.59.13",
+    "@tanstack/solid-query": "^5.59.13",
+    "@tanstack/solid-query-devtools": "^5.59.13",
+    "solid-js": "^1.9.3",
+    "vinxi": "^0.3.14"
   },
   "engines": {
     "node": ">=18"

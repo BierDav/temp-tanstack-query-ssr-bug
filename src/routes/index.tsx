@@ -1,17 +1,14 @@
-import { createQueries } from "@tanstack/solid-query";
+import { createQueries, createQuery } from "@tanstack/solid-query";
 import { ErrorBoundary, Suspense } from "solid-js";
 
 export default function () {
-    const queries = createQueries(() => {
+    const queries = createQuery(() => {
         const list = ["test1", "test2"];
         return ({
-            queries: list.map((key) => ({
-                queryKey: ["key", key],
-                queryFn: () => true,
-            })),
-            combine: (results) => ({
-                data: results.every(result => result.data)
-            })
+            queryKey: ["test"],
+            queryFn: async () => {
+                return list;
+            }
         });
     });
 
